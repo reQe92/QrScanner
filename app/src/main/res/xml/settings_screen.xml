@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/app_name">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_baseline_volume_down_24"
+            android:key="preference-qr-beep-enabled"
+            android:summary="@string/qr_beep_summary"
+            android:title="@string/qr_beep" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_baseline_open_in_browser_24"
+            android:key="preference-auto-open-after-scan"
+            android:summary="@string/auto_open_after_scan_summary"
+            android:title="@string/auto_open_after_scan" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:icon="@drawable/ic_baseline_cameraswitch_24"
+            app:key="preference-camera-id"
+            app:title="@string/select_default_camera"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/information">
+
+        <Preference
+            android:icon="@drawable/ic_baseline_build_24"
+            android:key="preference-version"
+            android:title="@string/version">
+        </Preference>
+
+        <Preference
+            android:icon="@drawable/ic_baseline_share_24"
+            android:key="preference-share-app"
+            android:summary="@string/share_app_summary"
+            android:title="@string/share_app">
+        </Preference>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

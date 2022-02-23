@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">QR You</string>
+    <string name="scan">Escanear código</string>
+    <string name="no_scans">Escanea tu primer código pulsando el botón Escanear código</string>
+    <string name="my_scans">Mis escaneos</string>
+    <string name="undo">Deshacer</string>
+    <string name="deleted">eliminado</string>
+    <string name="scanned_number">Escáner %1$s</string>
+    <string name="accept">Aceptar</string>
+    <string name="insert_name">Introduce un nombre</string>
+    <string name="cancel">Cancelar</string>
+    <string name="close">Cerrar</string>
+    <string name="show">Ver</string>
+    <string name="share">Compartir</string>
+    <string name="rename">Renombrar</string>
+    <string name="delete">Borrar</string>
+    <string name="information">Información</string>
+    <string name="share_app_summary">Comparte la aplicación de manera sencilla</string>
+    <string name="share_app">Compartir aplicación</string>
+    <string name="version">Versión</string>
+    <string name="qr_beep">Sonido de escáner</string>
+    <string name="qr_beep_summary">Emite un sonido cuando realiza un escaneo</string>
+    <string name="checkout_app">Hola, encuentra la aplicación QR You en: %1$s</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="auto_open_after_scan">Abrir después de escaneo</string>
+    <string name="auto_open_after_scan_summary">Abre el contenido del escaneo automáticamente</string>
+    <string name="select_default_camera">Seleccionar cámara por defecto</string>
+    <string name="camera">Cámara</string>
+    <string name="front_camera">Cámara frontal</string>
+    <string name="external_camera">Cámara externa</string>
+    <string name="back_camera">Cámara trasera</string>
+</resources>
