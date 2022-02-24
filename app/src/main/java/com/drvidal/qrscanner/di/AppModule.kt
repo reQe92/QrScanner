@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import androidx.room.Room
 import com.drvidal.qrscanner.data.code.CodeDatabase
+import com.drvidal.qrscanner.domain.AnalyticsRepository
 import com.drvidal.qrscanner.domain.CodeRepository
 import dagger.Module
 import dagger.Provides
@@ -33,14 +34,21 @@ object AppModule {
     fun provideCodeRepository(
         db: CodeDatabase,
         @ApplicationContext context: Context,
-        preferences: SharedPreferences
+        preferences: SharedPreferences,
+        analyticsRepository: AnalyticsRepository
     ): CodeRepository {
-        return CodeRepository(db.codeDao, context, preferences)
+        return CodeRepository(db.codeDao, context, preferences, analyticsRepository)
     }
 
     @Provides
     @Singleton
     fun providePreferences(app: Application): SharedPreferences {
         return PreferenceManager.getDefaultSharedPreferences(app)
+    }
+
+    @Singleton
+    @Provides
+    fun provideAnalyticsRepository() : AnalyticsRepository {
+        return AnalyticsRepository()
     }
 }

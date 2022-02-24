@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433150570541",
+    "project_id": "qrscanner-9ec75",
+    "storage_bucket": "qrscanner-9ec75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433150570541:android:d2182c62eebd5bd7f4c8a4",
+        "android_client_info": {
+          "package_name": "com.drvidal.qrscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433150570541-27ghllbh5tvn5fnri3eriek327dfl8o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIuD75P6QEZeIcuZsY5crk5F0FUaLFcaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433150570541-27ghllbh5tvn5fnri3eriek327dfl8o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

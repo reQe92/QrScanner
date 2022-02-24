@@ -1,5 +1,6 @@
 package com.drvidal.qrscanner.presentation.ui.theme
 
+import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -69,7 +70,7 @@ fun AppTheme(
     content: @Composable () -> Unit
 ) {
 
-    val dynamic = false // Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+    val dynamic =  Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
     val colorScheme = if (dynamic) {
         val context = LocalContext.current
         if (useDarkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)

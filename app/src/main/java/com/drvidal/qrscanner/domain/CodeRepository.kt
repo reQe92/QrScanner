@@ -12,7 +12,8 @@ import com.journeyapps.barcodescanner.ScanOptions
 
 class CodeRepository constructor(private val dao: CodeDao,
                                  private val context: Context,
-                                 private val preferences: SharedPreferences) {
+                                 private val preferences: SharedPreferences,
+                                 private val analyticsRepository: AnalyticsRepository) {
 
     fun getCodes() = dao.getCodes()
 
@@ -37,6 +38,7 @@ class CodeRepository constructor(private val dao: CodeDao,
             isUrl
         )
         dao.insertCode(code)
+        analyticsRepository.logScannedQr()
         return code
     }
 
